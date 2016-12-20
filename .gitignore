@@ -11,3 +11,4 @@ Homestead.yaml
 public/build
 public/css
 public/js
+resources/assets/less/css/app.css.map
