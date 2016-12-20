@@ -7,3 +7,7 @@ Homestead.yaml
 .env
 /npm-debug.log
 /npm-debug.log.*
+
+public/build
+public/css
+public/js
