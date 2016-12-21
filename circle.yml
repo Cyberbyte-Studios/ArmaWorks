@@ -2,7 +2,6 @@ machine:
   environment:
       YARN_VERSION: 0.18.1
       PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
-
   php:
     version: 7.0.11
 
@@ -20,7 +19,7 @@ dependencies:
   cache_directories:
     - ~/.yarn
     - ~/.cache/yarn
-    
+
 database:
   post:
     - php artisan migrate --seed

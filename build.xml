@@ -33,7 +33,7 @@
         <exec command="php artisan route:cache" passthru="true" />
         <exec command="php artisan passport:install" passthru="true" />
 
-        <zip destfile="armabyte.zip">
+        <zip destfile="armaworks.zip">
             <fileset dir=".">
                 <include name="**/**" />
                 <exclude name=".git/**" />
