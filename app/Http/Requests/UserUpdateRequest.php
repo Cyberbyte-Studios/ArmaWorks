@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Http\Requests;
+namespace ArmaWorks\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -4,15 +4,15 @@
  * User: Libern
  */
 
-namespace Someline\Api\Controllers;
+namespace ArmaWorks\Api\Controllers;
 
-use Someline\Base\Api\Controllers\Controller;
+use ArmaWorks\Base\Api\Controllers\Controller;
 
 abstract class BaseController extends Controller
 {
 
     /**
-     * @return \Someline\Models\Foundation\User
+     * @return \ArmaWorks\Models\Foundation\User
      */
     public function getAuthUser()
     {

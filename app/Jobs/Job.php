@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Jobs;
+namespace ArmaWorks\Jobs;
 
 use Illuminate\Bus\Queueable;
 

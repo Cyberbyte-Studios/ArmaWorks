@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Exceptions;
+namespace ArmaWorks\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

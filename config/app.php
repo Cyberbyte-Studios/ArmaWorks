@@ -184,14 +184,14 @@ return [
         /*
          * Application Service Providers...
          */
-        Someline\Providers\AppServiceProvider::class,
-        // Someline\Providers\BroadcastServiceProvider::class,
-        Someline\Providers\AuthServiceProvider::class,
-        Someline\Providers\EventServiceProvider::class,
-        Someline\Providers\RouteServiceProvider::class,
-        Someline\Providers\ApiServiceProvider::class,
-        Someline\Providers\RepositoryServiceProvider::class,
-        Someline\Providers\PolymorphicRelationServiceProvider::class,
+        ArmaWorks\Providers\AppServiceProvider::class,
+        // ArmaWorks\Providers\BroadcastServiceProvider::class,
+        ArmaWorks\Providers\AuthServiceProvider::class,
+        ArmaWorks\Providers\EventServiceProvider::class,
+        ArmaWorks\Providers\RouteServiceProvider::class,
+        ArmaWorks\Providers\ApiServiceProvider::class,
+        ArmaWorks\Providers\RepositoryServiceProvider::class,
+        ArmaWorks\Providers\PolymorphicRelationServiceProvider::class,
 
     ],
 

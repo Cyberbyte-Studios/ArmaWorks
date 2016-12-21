@@ -4,11 +4,11 @@
  * User: Libern
  */
 
-namespace Someline\Transformers;
+namespace ArmaWorks\Transformers;
 
 
-use Someline\Base\Models\BaseModel;
-use Someline\Base\Transformers\Transformer;
+use ArmaWorks\Base\Models\BaseModel;
+use ArmaWorks\Base\Transformers\Transformer;
 
 class BaseTransformer extends Transformer
 {

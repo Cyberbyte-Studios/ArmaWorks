@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Someline\Http\Kernel::class
+    ArmaWorks\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Someline\Console\Kernel::class
+    ArmaWorks\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Someline\Exceptions\Handler::class
+    ArmaWorks\Exceptions\Handler::class
 );
 
 /*

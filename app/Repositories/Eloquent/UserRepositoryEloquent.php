@@ -1,16 +1,16 @@
 <?php
 
-namespace Someline\Repositories\Eloquent;
+namespace ArmaWorks\Repositories\Eloquent;
 
-use Someline\Models\Foundation\User;
-use Someline\Presenters\UserPresenter;
-use Someline\Repositories\Criteria\RequestCriteria;
-use Someline\Repositories\Interfaces\UserRepository;
-use Someline\Validators\UserValidator;
+use ArmaWorks\Models\Foundation\User;
+use ArmaWorks\Presenters\UserPresenter;
+use ArmaWorks\Repositories\Criteria\RequestCriteria;
+use ArmaWorks\Repositories\Interfaces\UserRepository;
+use ArmaWorks\Validators\UserValidator;
 
 /**
  * Class UserRepositoryEloquent
- * @package namespace Someline\Repositories\Eloquent;
+ * @package namespace ArmaWorks\Repositories\Eloquent;
  */
 class UserRepositoryEloquent extends BaseRepository implements UserRepository
 {

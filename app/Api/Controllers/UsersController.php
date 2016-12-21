@@ -1,16 +1,16 @@
 <?php
 
-namespace Someline\Api\Controllers;
+namespace ArmaWorks\Api\Controllers;
 
 use Dingo\Api\Exception\DeleteResourceFailedException;
 use Dingo\Api\Exception\StoreResourceFailedException;
 use Dingo\Api\Exception\UpdateResourceFailedException;
 use Illuminate\Http\Response;
 use Prettus\Validator\Contracts\ValidatorInterface;
-use Someline\Http\Requests\UserCreateRequest;
-use Someline\Http\Requests\UserUpdateRequest;
-use Someline\Repositories\Interfaces\UserRepository;
-use Someline\Validators\UserValidator;
+use ArmaWorks\Http\Requests\UserCreateRequest;
+use ArmaWorks\Http\Requests\UserUpdateRequest;
+use ArmaWorks\Repositories\Interfaces\UserRepository;
+use ArmaWorks\Validators\UserValidator;
 
 class UsersController extends BaseController
 {

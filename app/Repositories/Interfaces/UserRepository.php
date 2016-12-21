@@ -1,12 +1,12 @@
 <?php
 
-namespace Someline\Repositories\Interfaces;
+namespace ArmaWorks\Repositories\Interfaces;
 
-use Someline\Repositories\Interfaces\BaseRepositoryInterface;
+use ArmaWorks\Repositories\Interfaces\BaseRepositoryInterface;
 
 /**
  * Interface UserRepository
- * @package namespace Someline\Repositories\Interfaces;
+ * @package namespace ArmaWorks\Repositories\Interfaces;
  */
 interface UserRepository extends BaseRepositoryInterface
 {

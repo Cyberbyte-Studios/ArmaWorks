@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Providers;
+namespace ArmaWorks\Providers;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\ServiceProvider;

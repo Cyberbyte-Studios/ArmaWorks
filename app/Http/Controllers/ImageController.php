@@ -1,11 +1,11 @@
-<?php namespace Someline\Http\Controllers;
+<?php namespace ArmaWorks\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
-use Someline\Http\Controllers\BaseController;
-use Someline\Image\Controllers\SomelineImageController;
-use Someline\Image\Models\SomelineImage;
-use Someline\Image\SomelineImageService;
+use ArmaWorks\Http\Controllers\BaseController;
+use ArmaWorks\Image\Controllers\SomelineImageController;
+use ArmaWorks\Image\Models\SomelineImage;
+use ArmaWorks\Image\SomelineImageService;
 
 class ImageController extends BaseController
 {

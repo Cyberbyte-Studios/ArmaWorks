@@ -4,12 +4,12 @@
  * User: Libern
  */
 
-namespace Someline\Listeners\User;
+namespace ArmaWorks\Listeners\User;
 
 
-use Someline\Events\User\UserLoggedInEvent;
-use Someline\Events\User\UserRegisteredEvent;
-use Someline\Models\BaseModel;
+use ArmaWorks\Events\User\UserLoggedInEvent;
+use ArmaWorks\Events\User\UserRegisteredEvent;
+use ArmaWorks\Models\BaseModel;
 
 class UserEventListener
 {
@@ -51,17 +51,17 @@ class UserEventListener
     {
         $events->listen(
             UserLoggedInEvent::class,
-            'Someline\Listeners\User\UserEventListener@onUserLogin'
+            'ArmaWorks\Listeners\User\UserEventListener@onUserLogin'
         );
 
         $events->listen(
             UserRegisteredEvent::class,
-            'Someline\Listeners\User\UserEventListener@onUserRegistered'
+            'ArmaWorks\Listeners\User\UserEventListener@onUserRegistered'
         );
 
 //        $events->listen(
-//            'Someline\Events\UserLoggedOut',
-//            'Someline\Listeners\UserEventListener@onUserLogout'
+//            'ArmaWorks\Events\UserLoggedOut',
+//            'ArmaWorks\Listeners\UserEventListener@onUserLogout'
 //        );
     }
 

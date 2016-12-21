@@ -6,7 +6,7 @@
  * Time: 17:39
  */
 
-namespace Someline\Http\Controllers;
+namespace ArmaWorks\Http\Controllers;
 
 
 class UserController extends BaseController

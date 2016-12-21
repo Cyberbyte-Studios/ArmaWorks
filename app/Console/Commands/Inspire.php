@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Console\Commands;
+namespace ArmaWorks\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

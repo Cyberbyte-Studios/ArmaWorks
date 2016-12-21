@@ -25,7 +25,7 @@
             "app/Helpers/Helpers.php"
         ],
         "psr-4": {
-            "Someline\\": "app/"
+            "ArmaWorks\\": "app/"
         }
     },
     "autoload-dev": {

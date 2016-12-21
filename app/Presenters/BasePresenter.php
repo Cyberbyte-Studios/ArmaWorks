@@ -4,10 +4,10 @@
  * User: Libern
  */
 
-namespace Someline\Presenters;
+namespace ArmaWorks\Presenters;
 
 
-use Someline\Base\Presenters\Presenter;
+use ArmaWorks\Base\Presenters\Presenter;
 
 abstract class BasePresenter extends Presenter
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Providers;
+namespace ArmaWorks\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Someline\Model' => 'Someline\Policies\ModelPolicy',
+        'ArmaWorks\Model' => 'ArmaWorks\Policies\ModelPolicy',
     ];
 
     /**

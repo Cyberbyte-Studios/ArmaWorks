@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Providers;
+namespace ArmaWorks\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

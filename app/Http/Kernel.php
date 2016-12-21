@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Http;
+namespace ArmaWorks\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -24,21 +24,21 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \Someline\Http\Middleware\EncryptCookies::class,
+            \ArmaWorks\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \Someline\Http\Middleware\VerifyCsrfToken::class,
+            \ArmaWorks\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
-            \Someline\Support\Middleware\LocaleMiddleware::class,
+            \ArmaWorks\Support\Middleware\LocaleMiddleware::class,
         ],
 
         'api' => [
             'throttle:60,1',
             'bindings',
-            \Someline\Api\Middleware\ApiAccessMiddleware::class,
-            \Someline\Support\Middleware\LocaleMiddleware::class,
+            \ArmaWorks\Api\Middleware\ApiAccessMiddleware::class,
+            \ArmaWorks\Support\Middleware\LocaleMiddleware::class,
         ],
     ];
 
@@ -54,7 +54,7 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \Someline\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \ArmaWorks\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
 
         // Passport

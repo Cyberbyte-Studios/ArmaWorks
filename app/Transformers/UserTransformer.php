@@ -1,8 +1,8 @@
 <?php
 
-namespace Someline\Transformers;
+namespace ArmaWorks\Transformers;
 
-use Someline\Models\Foundation\User;
+use ArmaWorks\Models\Foundation\User;
 
 class UserTransformer extends BaseTransformer
 {

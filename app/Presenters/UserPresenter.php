@@ -1,13 +1,13 @@
 <?php
 
-namespace Someline\Presenters;
+namespace ArmaWorks\Presenters;
 
-use Someline\Transformers\UserTransformer;
+use ArmaWorks\Transformers\UserTransformer;
 
 /**
  * Class UserPresenter
  *
- * @package namespace Someline\Presenters;
+ * @package namespace ArmaWorks\Presenters;
  */
 class UserPresenter extends BasePresenter
 {

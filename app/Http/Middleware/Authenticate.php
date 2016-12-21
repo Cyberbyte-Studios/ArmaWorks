@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Http\Middleware;
+namespace ArmaWorks\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Someline\Providers;
+namespace ArmaWorks\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Someline\Repositories\Eloquent\UserRepositoryEloquent;
-use Someline\Repositories\Interfaces\UserRepository;
+use ArmaWorks\Repositories\Eloquent\UserRepositoryEloquent;
+use ArmaWorks\Repositories\Interfaces\UserRepository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {

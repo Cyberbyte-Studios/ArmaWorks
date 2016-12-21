@@ -4,9 +4,9 @@
  * User: Libern
  */
 
-namespace Someline\Repositories\Interfaces;
+namespace ArmaWorks\Repositories\Interfaces;
 
-use Someline\Base\Repositories\Interfaces\RepositoryInterface;
+use ArmaWorks\Base\Repositories\Interfaces\RepositoryInterface;
 
 interface BaseRepositoryInterface extends RepositoryInterface
 {

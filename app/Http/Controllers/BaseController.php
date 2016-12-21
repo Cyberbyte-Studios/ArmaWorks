@@ -1,14 +1,14 @@
 <?php
 
-namespace Someline\Http\Controllers;
+namespace ArmaWorks\Http\Controllers;
 
-use Someline\Base\Http\Controllers\Controller;
+use ArmaWorks\Base\Http\Controllers\Controller;
 
 abstract class BaseController extends Controller
 {
 
     /**
-     * @return \Someline\Models\Foundation\User
+     * @return \ArmaWorks\Models\Foundation\User
      */
     public function getAuthUser()
     {

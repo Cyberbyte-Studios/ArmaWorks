@@ -1,8 +1,8 @@
 <?php
 
-namespace Someline\Policies;
+namespace ArmaWorks\Policies;
 
-use Someline\Base\Policies\Policy;
+use ArmaWorks\Base\Policies\Policy;
 
 class BasePolicy extends Policy
 {

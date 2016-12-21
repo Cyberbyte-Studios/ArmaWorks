@@ -4,11 +4,11 @@
  * User: Libern
  */
 
-namespace Someline\Events\User;
+namespace ArmaWorks\Events\User;
 
 
 use Illuminate\Queue\SerializesModels;
-use Someline\Models\Foundation\User;
+use ArmaWorks\Models\Foundation\User;
 
 class UserRegisteredEvent
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Someline\Providers;
+namespace ArmaWorks\Providers;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
-use Someline\Models\Foundation\User;
+use ArmaWorks\Models\Foundation\User;
 
 class PolymorphicRelationServiceProvider extends ServiceProvider
 {

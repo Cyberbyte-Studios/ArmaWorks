@@ -1,8 +1,8 @@
 <?php
 
-namespace Someline\Events;
+namespace ArmaWorks\Events;
 
-use Someline\Base\Events\Event as BaseEvent;
+use ArmaWorks\Base\Events\Event as BaseEvent;
 
 abstract class Event extends BaseEvent
 {

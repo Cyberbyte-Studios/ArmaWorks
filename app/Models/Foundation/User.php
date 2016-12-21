@@ -4,9 +4,9 @@
  * User: Libern
  */
 
-namespace Someline\Models\Foundation;
+namespace ArmaWorks\Models\Foundation;
 
-use Someline\Model\Foundation\User as BaseUser;
+use ArmaWorks\Model\Foundation\User as BaseUser;
 
 class User extends BaseUser
 {

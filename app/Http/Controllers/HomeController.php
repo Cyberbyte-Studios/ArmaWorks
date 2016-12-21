@@ -1,6 +1,6 @@
 <?php
 
-namespace Someline\Http\Controllers;
+namespace ArmaWorks\Http\Controllers;
 
 use Illuminate\Http\Request;
 

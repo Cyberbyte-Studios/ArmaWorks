@@ -1,10 +1,10 @@
 <?php
 
-namespace Someline\Http\Controllers\Auth;
+namespace ArmaWorks\Http\Controllers\Auth;
 
-use Someline\Models\Foundation\User;
+use ArmaWorks\Models\Foundation\User;
 use Validator;
-use Someline\Http\Controllers\BaseController;
+use ArmaWorks\Http\Controllers\BaseController;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends BaseController

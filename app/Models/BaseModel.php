@@ -4,10 +4,10 @@
  * User: Libern
  */
 
-namespace Someline\Models;
+namespace ArmaWorks\Models;
 
-use Someline\Base\Models\BaseModel as Model;
-use Someline\Models\Foundation\User;
+use ArmaWorks\Base\Models\BaseModel as Model;
+use ArmaWorks\Models\Foundation\User;
 
 class BaseModel extends Model
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Someline\Http\Controllers\Auth;
+namespace ArmaWorks\Http\Controllers\Auth;
 
-use Someline\Http\Controllers\BaseController;
+use ArmaWorks\Http\Controllers\BaseController;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends BaseController
