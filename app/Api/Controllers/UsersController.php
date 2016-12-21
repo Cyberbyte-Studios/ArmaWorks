@@ -5,6 +5,7 @@ namespace Someline\Api\Controllers;
 use Dingo\Api\Exception\DeleteResourceFailedException;
 use Dingo\Api\Exception\StoreResourceFailedException;
 use Dingo\Api\Exception\UpdateResourceFailedException;
+use Illuminate\Http\Response;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Someline\Http\Requests\UserCreateRequest;
 use Someline\Http\Requests\UserUpdateRequest;
@@ -13,17 +14,8 @@ use Someline\Validators\UserValidator;
 
 class UsersController extends BaseController
 {
-
-    /**
-     * @var UserRepository
-     */
     protected $repository;
-
-    /**
-     * @var UserValidator
-     */
     protected $validator;
-
 
     public function __construct(UserRepository $repository, UserValidator $validator)
     {
@@ -31,80 +23,32 @@ class UsersController extends BaseController
         $this->validator = $validator;
     }
 
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index(): Response
     {
         return $this->repository->all();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  UserCreateRequest $request
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function store(UserCreateRequest $request)
+    public function store(UserCreateRequest $request): Response
     {
-
         $data = $request->all();
-
         $this->validator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE);
-
-        // encrypt password
         $data['password'] = bcrypt($data['password']);
-
         $user = $this->repository->create($data);
-
-        // throw exception if store failed
-//        throw new StoreResourceFailedException('Failed to store.');
-
-        // A. return 201 created
-//            return $this->response->created(null);
-
-        // B. return data
         return $user;
-
     }
 
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function show($id): Response
     {
         return $this->repository->find($id);
     }
 
-    /**
-     * Display current logged in User info
-     *
-     * @return mixed
-     */
     public function me()
     {
         $user_id = auth_user()->getUserId();
         return $this->repository->find($user_id);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  UserUpdateRequest $request
-     * @param  string $id
-     *
-     * @return Response
-     */
-    public function update(UserUpdateRequest $request, $id)
+    public function update(UserUpdateRequest $request, int $id): Response
     {
 
         $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_UPDATE);
@@ -119,23 +63,13 @@ class UsersController extends BaseController
 
     }
 
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+    public function destroy(int $id): Response
     {
         $deleted = $this->repository->delete($id);
 
         if ($deleted) {
-            // Deleted, return 204 No Content
             return $this->response->noContent();
         } else {
-            // Failed, throw exception
             throw new DeleteResourceFailedException();
         }
     }

@@ -5,29 +5,19 @@ use Someline\Models\Foundation\User;
 
 class UsersTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
-        DB::statement("SET foreign_key_checks=0");
-        DB::table('users')->truncate();
-        DB::statement("SET foreign_key_checks=1");
-
         User::create([
-//            'slid' => '1',
-            'name' => "Libern Lin",
-            'email' => 'libern@someline.com',
-            'password' => bcrypt('Abc12345'),
+            'name' => 'Test Admin',
+            'email' => 'test@admin.com',
+            'password' => bcrypt('testadmin'),
             'remember_token' => str_random(10),
             'gender' => 'M',
             'birthday' => '1994-07-08',
-            'country' => 'CN',
-            'timezone' => 'Asia/Shanghai',
+            'country' => 'GB',
+            'timezone' => 'Europe/London',
             'locale' => 'en',
-            'username' => 'libern',
+            'username' => 'testadmin',
             'phone_number' => '+1234567890',
             'status' => 1,
         ]);
