@@ -8,6 +8,8 @@ Homestead.yaml
 /npm-debug.log
 /npm-debug.log.*
 
+bower_components
+
 public/build
 public/css
 public/js

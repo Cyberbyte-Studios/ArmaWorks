@@ -56,7 +56,7 @@ return array(
     /**
      * Default Service
      */
-    'default_service_name' => 'someline-starter',
+    'default_service_name' => 'armaworks',
 
     /**
      * Services
