@@ -9,8 +9,7 @@
         "dingo/api": "1.0.x@dev",
         "someline/starter-framework": "1.3.*",
         "rap2hpoutre/laravel-log-viewer": "^0.7.0",
-        "caffeinated/modules": "^4.1",
-        "nizarii/arma-rcon-class": "^2.1"
+        "caffeinated/modules": "^4.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
