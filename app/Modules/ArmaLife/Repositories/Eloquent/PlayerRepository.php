@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
-use App\Modules\ArmaLife\Models\Player;
+use ArmaWorks\Modules\ArmaLife\Models\Player;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Presenters\PlayerPresenter;
-use App\Modules\ArmaLife\Repositories\PlayerRepository as PlayerInterface;
+use ArmaWorks\Modules\ArmaLife\Presenters\PlayerPresenter;
+use ArmaWorks\Modules\ArmaLife\Repositories\PlayerRepository as PlayerInterface;
 
 /**
  * Class PlayerRepository
- * @package namespace App\Modules\ArmaLife\Repositories;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories;
  */
 class PlayerRepository extends ArmaLifeRepository implements PlayerInterface
 {

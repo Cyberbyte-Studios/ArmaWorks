@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ArmaLife\Models;
+namespace ArmaWorks\Modules\ArmaLife\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Auditable;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Rcon\Http\Controllers;
+namespace ArmaWorks\Modules\Rcon\Http\Controllers;
 
 use Auth;
 use Exception;

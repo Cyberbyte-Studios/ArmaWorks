@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories;
+namespace ArmaWorks\Modules\ArmaLife\Repositories;
 
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**
  * Interface GangRepository
- * @package namespace App\Modules\ArmaLife\Repositories;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories;
  */
 interface ArmaLifeRepository extends RepositoryInterface
 {

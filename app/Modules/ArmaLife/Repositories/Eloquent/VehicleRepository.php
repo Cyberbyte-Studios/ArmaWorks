@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Repositories\VehicleRepository as VehicleInterface;
-use App\Modules\ArmaLife\Models\Vehicle;
+use ArmaWorks\Modules\ArmaLife\Repositories\VehicleRepository as VehicleInterface;
+use ArmaWorks\Modules\ArmaLife\Models\Vehicle;
 
 /**
  * Class VehicleRepository
- * @package namespace App\Modules\ArmaLife\Repositories;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories;
  */
 class VehicleRepository extends ArmaLifeRepository implements VehicleInterface
 {

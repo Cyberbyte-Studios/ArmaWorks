@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Rcon\Providers;
+namespace ArmaWorks\Modules\Rcon\Providers;
 
 use Caffeinated\Modules\Support\ServiceProvider;
 

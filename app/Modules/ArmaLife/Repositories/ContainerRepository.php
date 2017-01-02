@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories;
+namespace ArmaWorks\Modules\ArmaLife\Repositories;
 
 interface ContainerRepository extends ArmaLifeRepository
 {

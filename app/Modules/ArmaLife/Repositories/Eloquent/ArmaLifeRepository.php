@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
 use Prettus\Repository\Eloquent\BaseRepository;
-use App\Modules\ArmaLife\Repositories\ArmaLifeRepository as ArmaLifeInterface;
+use ArmaWorks\Modules\ArmaLife\Repositories\ArmaLifeRepository as ArmaLifeInterface;
 
 abstract class ArmaLifeRepository extends BaseRepository implements ArmaLifeInterface
 {

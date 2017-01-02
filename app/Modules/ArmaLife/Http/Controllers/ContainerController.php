@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Controllers;
+namespace ArmaWorks\Modules\ArmaLife\Http\Controllers;
 
-use App\Traits\RestController;
-use App\Modules\ArmaLife\Repositories\ContainerRepository;
+use ArmaWorks\Traits\RestController;
+use ArmaWorks\Modules\ArmaLife\Repositories\ContainerRepository;
 use ArmaWorks\Api\Controllers\BaseApiController;
 
 class ContainerController extends BaseApiController

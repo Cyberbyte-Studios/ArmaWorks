@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Controllers;
+namespace ArmaWorks\Modules\ArmaLife\Http\Controllers;
 
-use App\Traits\RestController;
-use App\Modules\ArmaLife\Repositories\WantedRepository;
+use ArmaWorks\Traits\RestController;
+use ArmaWorks\Modules\ArmaLife\Repositories\WantedRepository;
 use ArmaWorks\Api\Controllers\BaseApiController;
 
 class WantedController extends BaseApiController

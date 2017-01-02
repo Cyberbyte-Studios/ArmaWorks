@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ArmaLife\Services;
+namespace ArmaWorks\Modules\ArmaLife\Services;
 
 class ArrayParser
 {

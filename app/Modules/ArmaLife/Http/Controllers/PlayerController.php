@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Controllers;
+namespace ArmaWorks\Modules\ArmaLife\Http\Controllers;
 
-use App\Traits\RestController;
-use App\Modules\ArmaLife\Repositories\PlayerRepository;
-use App\Modules\ArmaLife\Http\Requests\PlayerUpdateRequest;
+use ArmaWorks\Traits\RestController;
+use ArmaWorks\Modules\ArmaLife\Repositories\PlayerRepository;
+use ArmaWorks\Modules\ArmaLife\Http\Requests\PlayerUpdateRequest;
 use ArmaWorks\Api\Controllers\BaseApiController;
 
 class PlayerController extends BaseApiController

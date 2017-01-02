@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
-use App\Modules\ArmaLife\Models\House;
-use App\Modules\ArmaLife\Presenters\HousePresenter;
+use ArmaWorks\Modules\ArmaLife\Models\House;
+use ArmaWorks\Modules\ArmaLife\Presenters\HousePresenter;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Repositories\HouseRepository as HouseInterface;
+use ArmaWorks\Modules\ArmaLife\Repositories\HouseRepository as HouseInterface;
 
 /**
  * Class HouseRepository
- * @package namespace App\Modules\ArmaLife\Repositories;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories;
  */
 class HouseRepository extends ArmaLifeRepository implements HouseInterface
 {

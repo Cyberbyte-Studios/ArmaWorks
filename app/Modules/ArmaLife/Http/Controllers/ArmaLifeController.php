@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Controllers;
+namespace ArmaWorks\Modules\ArmaLife\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Modules\ArmaLife\Repositories\Eloquent\PlayerRepository;
-use App\Modules\ArmaLife\Repositories\Eloquent\VehicleRepository;
-use App\Modules\ArmaLife\Repositories\Eloquent\HouseRepository;
 use ArmaWorks\Api\Controllers\BaseApiController;
+use ArmaWorks\Modules\ArmaLife\Repositories\Eloquent\PlayerRepository;
+use ArmaWorks\Modules\ArmaLife\Repositories\Eloquent\VehicleRepository;
+use ArmaWorks\Modules\ArmaLife\Repositories\Eloquent\HouseRepository;
 
 
 class ArmaLifeController extends BaseApiController

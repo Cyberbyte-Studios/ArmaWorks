@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\ArmaLife\Transformers;
+namespace ArmaWorks\Modules\ArmaLife\Transformers;
 
 use League\Fractal\TransformerAbstract;
-use App\Modules\ArmaLife\Models\House;
-use App\Modules\ArmaLife\Services\ArrayParser;
+use ArmaWorks\Modules\ArmaLife\Models\House;
+use ArmaWorks\Modules\ArmaLife\Services\ArrayParser;
 
 /**
  * Class UserTransformer
- * @package namespace App\Transformers;
+ * @package namespace ArmaWorks\Transformers;
  */
 class HouseTransformer extends TransformerAbstract
 {

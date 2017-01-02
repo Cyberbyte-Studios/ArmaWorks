@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Requests;
+namespace ArmaWorks\Modules\ArmaLife\Http\Requests;
 
-use App\Http\Requests\Request;
+use ArmaWorks\Http\Requests\Request;
 
 class PlayerUpdateRequest extends Request
 {

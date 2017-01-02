@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Rcon\Providers;
+namespace ArmaWorks\Modules\Rcon\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;

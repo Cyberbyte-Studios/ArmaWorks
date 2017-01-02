@@ -12,7 +12,7 @@ var App = angular.module('app', ['ui.router', 'oc.lazyLoad'])
         url: "/", // root route
         views: {
           "lazyLoadView": {
-            controller: 'AppCtrl', // This view will use AppCtrl loaded below in the resolve
+            controller: 'AppCtrl', // This view will use ArmaWorksCtrl loaded below in the resolve
             templateUrl: 'partials/main.html'
           }
         },

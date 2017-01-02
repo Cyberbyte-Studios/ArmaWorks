@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\ArmaLife\Presenters;
+namespace ArmaWorks\Modules\ArmaLife\Presenters;
 
-use App\Modules\ArmaLife\Transformers\HouseTransformer;
+use ArmaWorks\Modules\ArmaLife\Transformers\HouseTransformer;
 use Prettus\Repository\Presenter\FractalPresenter;
 
 /**
  * Class PlayerPresenter
  *
- * @package namespace App\Presenters;
+ * @package namespace ArmaWorks\Presenters;
  */
 class HousePresenter extends FractalPresenter
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\ArmaLife\Tests\Unit;
+namespace ArmaWorks\Modules\ArmaLife\Tests\Unit;
 
 use Tests\TestCase;
-use App\Modules\ArmaLife\Services\ArrayParser;
+use ArmaWorks\Modules\ArmaLife\Services\ArrayParser;
 
 class OldStyleArrayParserTest extends TestCase
 {

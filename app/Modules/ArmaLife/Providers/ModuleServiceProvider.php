@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ArmaLife\Providers;
+namespace ArmaWorks\Modules\ArmaLife\Providers;
 
 use Caffeinated\Modules\Support\ServiceProvider;
 

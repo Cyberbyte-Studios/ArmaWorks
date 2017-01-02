@@ -8207,7 +8207,7 @@
 	
 		if ( vis ) {
 			// Insert column
-			// Need to decide if we should use appendChild or insertBefore
+			// Need to decide if we should use ArmaWorksendChild or insertBefore
 			var insertBefore = $.inArray( true, _pluck(cols, 'bVisible'), column+1 );
 	
 			for ( i=0, ien=data.length ; i<ien ; i++ ) {

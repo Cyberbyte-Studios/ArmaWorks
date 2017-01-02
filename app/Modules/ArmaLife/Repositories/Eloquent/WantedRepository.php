@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Repositories\WantedRepository as WantedInterface;
-use App\Modules\ArmaLife\Models\Wanted;
+use ArmaWorks\Modules\ArmaLife\Repositories\WantedRepository as WantedInterface;
+use ArmaWorks\Modules\ArmaLife\Models\Wanted;
 
 /**
  * Class WantedRepository
- * @package namespace App\Modules\ArmaLife\Repositories;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories;
  */
 class WantedRepository extends ArmaLifeRepository implements WantedInterface
 {

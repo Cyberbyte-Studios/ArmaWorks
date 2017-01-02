@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Traits;
+namespace ArmaWorks\Traits;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Collection;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Repositories\ArmaLifeRepository;
+use ArmaWorks\Modules\ArmaLife\Repositories\ArmaLifeRepository;
 
 trait RestController
 {

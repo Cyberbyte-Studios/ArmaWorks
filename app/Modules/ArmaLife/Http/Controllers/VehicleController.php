@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\ArmaLife\Http\Controllers;
+namespace ArmaWorks\Modules\ArmaLife\Http\Controllers;
 
-use App\Traits\RestController;
-use App\Http\Controllers\Controller;
-use App\Modules\ArmaLife\Repositories\VehicleRepository;
+use ArmaWorks\Traits\RestController;
+use ArmaWorks\Http\Controllers\Controller;
+use ArmaWorks\Modules\ArmaLife\Repositories\VehicleRepository;
 use ArmaWorks\Api\Controllers\BaseApiController;
 
 class VehicleController extends BaseApiController

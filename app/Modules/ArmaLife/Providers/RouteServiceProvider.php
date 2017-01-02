@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ArmaLife\Providers;
+namespace ArmaWorks\Modules\ArmaLife\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;

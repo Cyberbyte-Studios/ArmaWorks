@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\ArmaLife\Repositories\Eloquent;
+namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
 
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Modules\ArmaLife\Repositories\GangRepository as GangInterface;
-use App\Modules\ArmaLife\Models\Gang;
+use ArmaWorks\Modules\ArmaLife\Repositories\GangRepository as GangInterface;
+use ArmaWorks\Modules\ArmaLife\Models\Gang;
 
 /**
  * Class GangRepository
- * @package namespace App\Modules\ArmaLife\Repositories\Eloquent;
+ * @package namespace ArmaWorks\Modules\ArmaLife\Repositories\Eloquent;
  */
 class GangRepository extends ArmaLifeRepository implements GangInterface
 {
