@@ -4,7 +4,7 @@ namespace ArmaWorks\Repositories\Eloquent;
 
 use ArmaWorks\Models\Foundation\User;
 use ArmaWorks\Presenters\UserPresenter;
-use ArmaWorks\Repositories\Criteria\RequestCriteria;
+use Someline\Repositories\Criteria\RequestCriteria;
 use ArmaWorks\Repositories\Interfaces\UserRepository;
 use ArmaWorks\Validators\UserValidator;
 
@@ -31,7 +31,6 @@ class UserRepositoryEloquent extends BaseRepository implements UserRepository
     */
     public function validator()
     {
-
         return UserValidator::class;
     }
 

@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Arma Works',
 
     /*
     |--------------------------------------------------------------------------
@@ -173,13 +173,14 @@ return [
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
-        Someline\Rest\RestClientServiceProvider::class,
+//        Someline\Rest\RestClientServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         Someline\Repository\Providers\RepositoryServiceProvider::class,
         Monarobase\CountryList\CountryListServiceProvider::class,
         Torann\GeoIP\GeoIPServiceProvider::class,
         Someline\Image\SomelineImageServiceProvider::class,
+        Caffeinated\Modules\ModulesServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -241,9 +242,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Image' => Intervention\Image\Facades\Image::class,
-        'LaravelLocalization'   => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
+        'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'Countries' => Monarobase\CountryList\CountryListFacade::class,
         'GeoIP' => Torann\GeoIP\GeoIPFacade::class,
+        'Module' => Caffeinated\Modules\Facades\Module::class,
 
     ],
 

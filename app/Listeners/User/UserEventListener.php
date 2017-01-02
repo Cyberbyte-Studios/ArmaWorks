@@ -1,11 +1,5 @@
 <?php
-/**
- * Created for someline-starter.
- * User: Libern
- */
-
 namespace ArmaWorks\Listeners\User;
-
 
 use ArmaWorks\Events\User\UserLoggedInEvent;
 use ArmaWorks\Events\User\UserRegisteredEvent;

@@ -1,11 +1,6 @@
 <?php
-/**
- * Created for someline-starter.
- * User: Libern
- */
 
 namespace ArmaWorks\Events\User;
-
 
 use Illuminate\Queue\SerializesModels;
 use ArmaWorks\Models\Foundation\User;

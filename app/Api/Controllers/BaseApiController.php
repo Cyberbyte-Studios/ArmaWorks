@@ -1,16 +1,11 @@
 <?php
-/**
- * Created for someline-starter.
- * User: Libern
- */
 
 namespace ArmaWorks\Api\Controllers;
 
-use ArmaWorks\Base\Api\Controllers\Controller;
+use Someline\Base\Api\Controllers\Controller;
 
-abstract class BaseController extends Controller
+abstract class BaseApiController extends Controller
 {
-
     /**
      * @return \ArmaWorks\Models\Foundation\User
      */

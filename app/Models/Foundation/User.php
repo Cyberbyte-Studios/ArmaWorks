@@ -1,12 +1,8 @@
 <?php
-/**
- * Created for someline-starter.
- * User: Libern
- */
 
 namespace ArmaWorks\Models\Foundation;
 
-use ArmaWorks\Model\Foundation\User as BaseUser;
+use Someline\Model\Foundation\User as BaseUser;
 
 class User extends BaseUser
 {

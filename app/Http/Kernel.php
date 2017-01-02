@@ -31,14 +31,14 @@ class Kernel extends HttpKernel
             \ArmaWorks\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
-            \ArmaWorks\Support\Middleware\LocaleMiddleware::class,
+//            \SomeLine\Support\Middleware\LocaleMiddleware::class,
         ],
 
         'api' => [
             'throttle:60,1',
             'bindings',
-            \ArmaWorks\Api\Middleware\ApiAccessMiddleware::class,
-            \ArmaWorks\Support\Middleware\LocaleMiddleware::class,
+            \SomeLine\Api\Middleware\ApiAccessMiddleware::class,
+//            \SomeLine\Support\Middleware\LocaleMiddleware::class,
         ],
     ];
 

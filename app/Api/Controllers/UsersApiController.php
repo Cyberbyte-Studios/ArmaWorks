@@ -3,8 +3,6 @@
 namespace ArmaWorks\Api\Controllers;
 
 use Dingo\Api\Exception\DeleteResourceFailedException;
-use Dingo\Api\Exception\StoreResourceFailedException;
-use Dingo\Api\Exception\UpdateResourceFailedException;
 use Illuminate\Http\Response;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use ArmaWorks\Http\Requests\UserCreateRequest;
@@ -12,7 +10,7 @@ use ArmaWorks\Http\Requests\UserUpdateRequest;
 use ArmaWorks\Repositories\Interfaces\UserRepository;
 use ArmaWorks\Validators\UserValidator;
 
-class UsersController extends BaseController
+class UsersApiController extends BaseApiController
 {
     protected $repository;
     protected $validator;
@@ -50,7 +48,6 @@ class UsersController extends BaseController
 
     public function update(UserUpdateRequest $request, int $id): Response
     {
-
         $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_UPDATE);
 
         $user = $this->repository->update($request->all(), $id);

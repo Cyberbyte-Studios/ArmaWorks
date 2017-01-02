@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \Someline\Models\Foundation\User::class,
+            'model' => \ArmaWorks\Models\Foundation\User::class,
         ],
 
         // 'users' => [

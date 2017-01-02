@@ -1,13 +1,8 @@
 <?php
-/**
- * Created for someline-starter.
- * User: Libern
- */
-
 namespace ArmaWorks\Models;
 
-use ArmaWorks\Base\Models\BaseModel as Model;
 use ArmaWorks\Models\Foundation\User;
+use Someline\Base\Models\BaseModel as Model;
 
 class BaseModel extends Model
 {

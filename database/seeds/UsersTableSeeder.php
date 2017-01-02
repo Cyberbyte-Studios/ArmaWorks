@@ -1,7 +1,7 @@
 <?php
 
+use ArmaWorks\Models\Foundation\User;
 use Illuminate\Database\Seeder;
-use Someline\Models\Foundation\User;
 
 class UsersTableSeeder extends Seeder
 {
