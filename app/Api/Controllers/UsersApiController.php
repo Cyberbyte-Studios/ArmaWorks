@@ -21,12 +21,12 @@ class UsersApiController extends BaseApiController
         $this->validator = $validator;
     }
 
-    public function index(): Response
+    public function index()
     {
         return $this->repository->all();
     }
 
-    public function store(UserCreateRequest $request): Response
+    public function store(UserCreateRequest $request)
     {
         $data = $request->all();
         $this->validator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE);
@@ -35,7 +35,7 @@ class UsersApiController extends BaseApiController
         return $user;
     }
 
-    public function show($id): Response
+    public function show($id)
     {
         return $this->repository->find($id);
     }
@@ -46,7 +46,7 @@ class UsersApiController extends BaseApiController
         return $this->repository->find($user_id);
     }
 
-    public function update(UserUpdateRequest $request, int $id): Response
+    public function update(UserUpdateRequest $request, int $id)
     {
         $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_UPDATE);
 
@@ -60,7 +60,7 @@ class UsersApiController extends BaseApiController
 
     }
 
-    public function destroy(int $id): Response
+    public function destroy(int $id)
     {
         $deleted = $this->repository->delete($id);
 

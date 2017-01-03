@@ -18,27 +18,19 @@ $api->version('v1', [
     'namespace' => 'ArmaWorks\Api\Controllers',
     'middleware' => ['api']
 ], function (Router $api) {
+    $api->get('status', 'StatusApiController@index');
 
     $api->group(['middleware' => ['auth:api']], function (Router $api) {
+        $api->get('users', 'UsersApiController@index');
 
-        // Rate: 100 requests per 5 minutes
-        $api->group(['middleware' => ['api.throttle'], 'limit' => 100, 'expires' => 5], function (Router $api) {
+        $api->post('users', 'UsersApiController@store');
 
-            $api->get('users', 'UsersController@index');
+        $api->get('users/me', 'UsersApiController@me');
 
-            $api->post('users', 'UsersController@store');
+        $api->get('users/{id}', 'UsersApiController@show');
 
-            $api->get('users/me', 'UsersController@me');
+        $api->put('users/{id}', 'UsersApiController@update');
 
-            $api->get('users/{id}', 'UsersController@show');
-
-            $api->put('users/{id}', 'UsersController@update');
-
-            $api->delete('users/{id}', 'UsersController@destroy');
-
-        });
-
+        $api->delete('users/{id}', 'UsersApiController@destroy');
     });
-
-
 });

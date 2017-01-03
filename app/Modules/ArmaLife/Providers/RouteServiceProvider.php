@@ -68,12 +68,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
-            'middleware' => 'api',
-            'namespace'  => $this->namespace,
-            'prefix'     => 'api',
-        ], function ($router) {
-            require module_path('armalife', 'Routes/api.php');
-        });
+        require module_path('armalife', 'Routes/api.php');
     }
 }

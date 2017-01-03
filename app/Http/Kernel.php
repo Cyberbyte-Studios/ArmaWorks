@@ -37,7 +37,7 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
             'bindings',
-            \SomeLine\Api\Middleware\ApiAccessMiddleware::class,
+            \Someline\Api\Middleware\ApiAccessMiddleware::class,
 //            \SomeLine\Support\Middleware\LocaleMiddleware::class,
         ],
     ];
