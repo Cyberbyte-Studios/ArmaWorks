@@ -15,6 +15,7 @@ class StatusApiController extends BaseApiController
     public function index() {
         return [
             'status' => 'online',
+            'name' => config('armaworks.community_name'),
             'developer' => 'Cyberbyte Studios',
             'version' => 1 // todo: add versioning
         ];
